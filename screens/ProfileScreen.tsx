@@ -19,7 +19,7 @@ const ProfileScreen: React.FC = () => {
                 <div className="flex items-center gap-4">
                     <div className="relative">
                         <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg">
-                            <img alt="Profile" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB1j-gTZ_eyBAZLcrxl3OFVXlAwPVRKW_wi3bQq9QuK-KcVScwDeGfqnP_dbuPc5CN452CDP2deMUhSQTwTJ0mw5XESC0Jq3V4B8gqZIBcLeLeyeXkOqfRVRWPqYHaNxzPP9AtpAirOR3tn_a2OqWOcwalRpa0O2MhYFHdnXF4xatwiG2yspm5uYWh89KeSEbw07tt68M5J6wnWSJFFJpMDRlqJ98RnjR3Tw_Oskx82ErJ0v3EfD9V2YEOebSZMC6u3HoWXjD7zPw"/>
+                            <img alt="Profile" className="w-full h-full object-cover" src="/profile.png"/>
                         </div>
                         <button className="absolute bottom-0 right-0 p-1.5 bg-primary rounded-full text-white shadow-md hover:bg-primary-dark transition-colors">
                             <span className="material-icons-round text-sm block">edit</span>

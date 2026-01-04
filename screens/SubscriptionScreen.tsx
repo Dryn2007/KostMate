@@ -10,20 +10,33 @@ const SubscriptionScreen: React.FC = () => {
                 {/* Header */}
                 <header className="flex items-center justify-between p-6">
                     <div className="flex items-center gap-2">
-                        <div className="h-8 w-auto flex items-center justify-center">
-                            <img alt="KosMate Logo" className="object-contain h-full w-auto" src="https://cdn-icons-png.flaticon.com/512/5661/5661007.png"/>
+                        <div className="h-12 w-auto flex items-center justify-center">
+                            <img
+                                alt="KosMate Logo"
+                                className="object-contain h-full w-auto"
+                                src="/logo.png"
+                            />
                         </div>
-                        <span className="font-display font-bold text-lg text-gray-800 dark:text-white tracking-tight">KosMate</span>
+                        <span className="font-display font-bold text-lg text-gray-800 dark:text-white tracking-tight">
+                            KosMate
+                        </span>
                     </div>
-                    <button onClick={() => navigate(-1)} className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300">
+                    <button
+                        onClick={() => navigate(-1)}
+                        className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+                    >
                         <span className="material-icons-round text-2xl">close</span>
                     </button>
                 </header>
 
                 <main className="flex-1 px-6 pb-6 flex flex-col">
                     <div className="mb-6">
-                        <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Upgrade Hidupmu</h2>
-                        <p className="text-gray-500 dark:text-gray-400 text-sm">Fokus kuliah, urusan kosan biar KosMate yang handle.</p>
+                        <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                            Upgrade Hidupmu
+                        </h2>
+                        <p className="text-gray-500 dark:text-gray-400 text-sm">
+                            Fokus kuliah, urusan kosan biar KosMate yang handle.
+                        </p>
                     </div>
 
                     {/* Gradient Card */}
@@ -31,34 +44,100 @@ const SubscriptionScreen: React.FC = () => {
                         {/* Decorative Blobs */}
                         <div className="absolute -top-10 -right-10 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition duration-500"></div>
                         <div className="absolute bottom-10 -left-10 w-24 h-24 bg-cyan-400 opacity-20 rounded-full blur-2xl group-hover:scale-125 transition duration-500"></div>
-                        
+
                         <div className="relative z-10">
                             <div className="flex items-start justify-between mb-4">
                                 <div>
                                     <div className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full mb-3 border border-white/10">
-                                        <span className="material-icons-round text-yellow-300 text-sm">star</span>
-                                        <span className="text-xs font-semibold tracking-wide uppercase">Most Popular</span>
+                                        <span className="material-icons-round text-yellow-300 text-sm">
+                                            star
+                                        </span>
+                                        <span className="text-xs font-semibold tracking-wide uppercase">
+                                            Most Popular
+                                        </span>
                                     </div>
                                     <h3 className="text-2xl font-bold mb-1">KosMate Prime</h3>
-                                    <p className="text-blue-100 text-sm font-light">Paket Anti Ribet Sebulan</p>
+                                    <p className="text-blue-100 text-sm font-light">
+                                        Paket Anti Ribet Sebulan
+                                    </p>
                                 </div>
-                                <span className="material-icons-round text-4xl text-white/20">workspace_premium</span>
+                                <span className="material-icons-round text-4xl text-white/20">
+                                    workspace_premium
+                                </span>
                             </div>
 
                             <div className="my-6 space-y-4">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                        <span className="material-icons-round text-cyan-300">cleaning_services</span>
+                                        <span className="material-icons-round text-cyan-300">
+                                            cleaning_services
+                                        </span>
                                     </div>
                                     <div>
                                         <p className="font-semibold">4x Deep Cleaning</p>
-                                        <p className="text-xs text-blue-100">Kamar mandi & kamar tidur kinclong</p>
+                                        <p className="text-xs text-blue-100">
+                                            Kamar mandi & kamar tidur kinclong
+                                        </p>
                                     </div>
                                 </div>
+
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                        <span className="material-icons-round text-cyan-300">local_laundry_service</span>
+                                        <span className="material-icons-round text-cyan-300">
+                                            local_laundry_service
+                                        </span>
                                     </div>
                                     <div>
                                         <p className="font-semibold">4x Laundry Pick-up</p>
-                                        <p className="text-xs text-blue-100">Antar jemput laundry
+                                        <p className="text-xs text-blue-100">
+                                            Antar jemput laundry
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Tambahkan benefit lain di sini kalau mau */}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Section bawah: harga & CTA */}
+                    <div className="mt-auto space-y-4">
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <p className="text-sm text-gray-400">Mulai dari</p>
+                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
+                                    Rp350.000
+                                </p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400">
+                                    /bulan • Bisa dibagi 2-3 anak kos
+                                </p>
+                            </div>
+                            <div className="text-right">
+                                <p className="text-xs text-gray-400 line-through">Rp450.000</p>
+                                <p className="text-sm font-semibold text-emerald-400">
+                                    Hemat 100K/bulan
+                                </p>
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            onClick={() => navigate('/order')}
+                            className="w-full py-3.5 rounded-2xl bg-white text-blue-700 font-semibold shadow-soft shadow-blue-200 flex items-center justify-center gap-2 hover:bg-blue-50 transition-colors"
+                        >
+                            <span className="material-icons-round text-lg">bolt</span>
+                            <span>Langganan Sekarang</span>
+                        </button>
+
+                        <p className="text-[11px] text-gray-400 text-center">
+                            Dengan melanjutkan, kamu setuju dengan{' '}
+                            <span className="underline">Syarat &amp; Ketentuan</span> KosMate.
+                        </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    );
+};
+
+export default SubscriptionScreen;

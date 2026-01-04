@@ -9,7 +9,7 @@ const HomeScreen: React.FC = () => {
             {/* Header */}
             <header className="flex justify-between items-center px-6 pt-12 pb-6 bg-white dark:bg-card-dark sticky top-0 z-30 shadow-sm transition-colors duration-300">
                 <div className="flex items-center gap-3">
-                    <img alt="KosMate Logo" className="h-10 w-auto object-contain" src="https://cdn-icons-png.flaticon.com/512/5661/5661007.png"/>
+                    <img alt="KosMate Logo" className="h-14 w-auto object-contain" src="/logo.png" />
                     <span className="font-display font-bold text-xl text-primary tracking-tight">KosMate</span>
                 </div>
                 <div className="flex items-center gap-4">
@@ -18,7 +18,7 @@ const HomeScreen: React.FC = () => {
                         <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-card-dark"></span>
                     </button>
                     <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden border-2 border-primary">
-                        <img alt="Profile" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB1j-gTZ_eyBAZLcrxl3OFVXlAwPVRKW_wi3bQq9QuK-KcVScwDeGfqnP_dbuPc5CN452CDP2deMUhSQTwTJ0mw5XESC0Jq3V4B8gqZIBcLeLeyeXkOqfRVRWPqYHaNxzPP9AtpAirOR3tn_a2OqWOcwalRpa0O2MhYFHdnXF4xatwiG2yspm5uYWh89KeSEbw07tt68M5J6wnWSJFFJpMDRlqJ98RnjR3Tw_Oskx82ErJ0v3EfD9V2YEOebSZMC6u3HoWXjD7zPw"/>
+                        <img alt="Profile" className="w-full h-full object-cover" src="/profile.png" />
                     </div>
                 </div>
             </header>
@@ -38,7 +38,7 @@ const HomeScreen: React.FC = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         {/* Daily Cleaning */}
-                        <div 
+                        <div
                             onClick={() => navigate('/services')}
                             className="col-span-2 sm:col-span-1 bg-white dark:bg-card-dark rounded-2xl p-5 shadow-soft border border-gray-100 dark:border-gray-700 hover:shadow-glow transition-all duration-300 group cursor-pointer relative overflow-hidden"
                         >
@@ -97,7 +97,7 @@ const HomeScreen: React.FC = () => {
 
                 {/* Promo Banner */}
                 <section>
-                    <div 
+                    <div
                         onClick={() => navigate('/subscription')}
                         className="relative w-full rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition hover:scale-[1.01]"
                     >
@@ -116,7 +116,7 @@ const HomeScreen: React.FC = () => {
                             </div>
                             <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center relative">
                                 <div className="absolute inset-0 bg-white/10 rounded-full scale-125 animate-pulse"></div>
-                                <img alt="Student studying" className="w-20 h-20 object-contain drop-shadow-md z-10 invert brightness-0 filter md:invert-0 md:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMaVn4KhtQmM8WlNyGU6PAffiehv_KLVQpGUc0_DWbCOqU6X8CjUhcm7hQdtNPs7BxP7cFP0bBW1GnrHfFcHMQG6NI0diDvlBt0TSgb4gPt_ky-GUP3_2voS_jZb6hCDrMdiNM7nx2LwEQCJi86AyQqG3lNkbEPHsLCXSHYYsVycrsHxUjsNLNNitJiBYUd-UuMMGDDkflFMMtTUZANCtnVAwU9u_LwazaF9stdkxr_3-vkZNFYDJfB77rFUPxbT9fgAwRNkMspk"/>
+                                <img alt="Student studying" className="w-20 h-20 object-contain drop-shadow-md z-10 invert brightness-0 filter md:invert-0 md:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMaVn4KhtQmM8WlNyGU6PAffiehv_KLVQpGUc0_DWbCOqU6X8CjUhcm7hQdtNPs7BxP7cFP0bBW1GnrHfFcHMQG6NI0diDvlBt0TSgb4gPt_ky-GUP3_2voS_jZb6hCDrMdiNM7nx2LwEQCJi86AyQqG3lNkbEPHsLCXSHYYsVycrsHxUjsNLNNitJiBYUd-UuMMGDDkflFMMtTUZANCtnVAwU9u_LwazaF9stdkxr_3-vkZNFYDJfB77rFUPxbT9fgAwRNkMspk" />
                             </div>
                         </div>
                     </div>

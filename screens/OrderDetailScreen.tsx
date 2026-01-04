@@ -14,7 +14,7 @@ const OrderDetailScreen: React.FC = () => {
                     </button>
                     <div className="flex flex-col">
                         <div className="flex items-center gap-2">
-                            <img alt="KosMate Logo" className="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3V1oB8i9rS4Wz0I_tXjY3B8-K_yA8F6-c3nZ8Hq9K0M2G5J2D6L5F8N9H0P4R7T6V2X5Z"/>
+                            <img alt="KosMate Logo" className="h-12 w-auto object-contain" src="/logo.png" />
                         </div>
                         <p className="text-xs text-text-sub-light dark:text-text-sub-dark">Detail Pemesanan</p>
                     </div>
@@ -30,7 +30,7 @@ const OrderDetailScreen: React.FC = () => {
                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
                     <div className="flex items-start gap-4 relative z-10">
                         <div className="relative">
-                            <img alt="Cleaner Profile" className="w-16 h-16 rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGN1NuzmPLkrjdP--WkEeNV2TzXdwlZ0eRPOYWd0SMkK52qEN1ou3Fwds0Jf9lw2iUnn1N2LzwJp7RukP2s4K2cwWaw8eO1lR0nmMqy-_-cHHebn_7T7Tkx1-WSwB1Awu2q-h6t1nudjGT31o_fDlETSnLn6Cgr7O8iZGDwdgnPoKNETYRguR6pXoj4qAXpE6C0b65ST-6TDPrHz6SkTlbqtCJqj96SuJ8yZcKYdkPoe3FsQl-5Y1wpELBELd9UIYtiO_sTXkcYaA"/>
+                            <img alt="Cleaner Profile" className="w-16 h-16 rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGN1NuzmPLkrjdP--WkEeNV2TzXdwlZ0eRPOYWd0SMkK52qEN1ou3Fwds0Jf9lw2iUnn1N2LzwJp7RukP2s4K2cwWaw8eO1lR0nmMqy-_-cHHebn_7T7Tkx1-WSwB1Awu2q-h6t1nudjGT31o_fDlETSnLn6Cgr7O8iZGDwdgnPoKNETYRguR6pXoj4qAXpE6C0b65ST-6TDPrHz6SkTlbqtCJqj96SuJ8yZcKYdkPoe3FsQl-5Y1wpELBELd9UIYtiO_sTXkcYaA" />
                             <span className="absolute -bottom-1 -right-1 bg-green-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white dark:border-gray-800">ONLINE</span>
                         </div>
                         <div className="flex-1">
@@ -133,14 +133,14 @@ const OrderDetailScreen: React.FC = () => {
             {/* Bottom Actions */}
             <div className="sticky bottom-0 bg-white dark:bg-card-dark p-4 shadow-top rounded-t-2xl border-t border-gray-100 dark:border-gray-800 safe-area-pb">
                 <div className="max-w-md mx-auto space-y-3">
-                    <button 
+                    <button
                         onClick={() => navigate('/')}
                         className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-orange-500/20 transform transition active:scale-[0.98] flex items-center justify-center gap-2 group"
                     >
                         <span className="material-icons-round animate-pulse">bolt</span>
                         <span>Instant Booking</span>
                     </button>
-                    <button 
+                    <button
                         onClick={() => navigate('/')}
                         className="w-full bg-primary hover:bg-secondary text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-blue-500/20 transform transition active:scale-[0.98] flex items-center justify-center gap-2"
                     >

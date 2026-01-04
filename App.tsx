@@ -21,7 +21,7 @@ const LayoutWithNav: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 const App: React.FC = () => {
     return (
         <HashRouter>
-            <div className="max-w-md mx-auto min-h-screen bg-background-light dark:bg-background-dark shadow-2xl overflow-hidden relative">
+            <div className="max-w-md mx-auto min-h-screen bg-background-light dark:bg-background-dark shadow-2xl overflow-hidden relative hide-scrollbar">
                 <Routes>
                     <Route path="/" element={
                         <LayoutWithNav>

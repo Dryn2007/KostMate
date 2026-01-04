@@ -59,7 +59,7 @@ const ServiceSelectionScreen: React.FC = () => {
             <header className="pt-6 pb-4 px-6 flex justify-between items-center bg-white dark:bg-card-dark sticky top-0 z-10 shadow-sm">
                 <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
                     <div className="h-8 w-auto relative">
-                        <img alt="KosMate Logo" className="h-full w-auto object-contain" src="https://cdn-icons-png.flaticon.com/512/5661/5661007.png"/>
+                        <img alt="KosMate Logo" className="h-12 w-auto object-contain" src="/logo.png" />
                     </div>
                     <span className="font-display font-bold text-lg text-primary tracking-tight">KosMate</span>
                 </div>
@@ -118,12 +118,12 @@ const ServiceSelectionScreen: React.FC = () => {
                                         )}
                                         <p className="text-xl font-bold text-gray-900 dark:text-white">{formatPrice(plan.price)}</p>
                                     </div>
-                                    <button 
+                                    <button
                                         onClick={() => navigate('/order')}
                                         className={`
                                             px-6 py-2 rounded-xl font-medium text-sm transition-all active:scale-95
-                                            ${plan.recommended 
-                                                ? 'bg-primary hover:bg-blue-700 text-white shadow-md shadow-blue-500/30' 
+                                            ${plan.recommended
+                                                ? 'bg-primary hover:bg-blue-700 text-white shadow-md shadow-blue-500/30'
                                                 : 'bg-white dark:bg-gray-800 border-2 border-primary text-primary hover:bg-primary hover:text-white'}
                                         `}
                                     >
